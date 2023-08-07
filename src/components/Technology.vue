@@ -31,21 +31,24 @@
         </v-row>
         <v-row align="center" justify="center">
           <v-col cols="10">
-            <div class="font-weight-bold display-2 text-sm-h4 text-h6 " align="center" > Process We Follow</div>
+            <div class="font-weight-bold display-2 text-sm-h4 text-h6 " align="center" >Process We Follow</div>
 
             <v-row align="center" justify="center" class="my-3">
               <v-col cols="12" md="3" v-for="card of processData" :key="card.title">
                 <v-card 
-                        class="mx-auto pa-3"
-                    >
+                        class="mx-auto pa-3 "
+                    >   
+                        <div class=" d-flex justify-center">
+                            <div style="width:15%" class="mt-1">
+                                <img :src="card.icon" width="100%"> 
+                            </div>  
+                        </div>
                         <v-card-title class="d-flex justify-center">
                         {{card.title}}
                         </v-card-title>
                         <v-card-subtitle   align="center">
                         <div>{{card.subtitle}}</div>
                         </v-card-subtitle>
-
-
                 </v-card>
               </v-col>
             </v-row>
@@ -157,30 +160,37 @@
             processData:[
             {
                 title:'1. Requirement Gathering',
+                icon: require("@/assets/img/icons/required.svg"),
                 subtitle:'We follow the first and foremost priority of gathering requirements, resources, and information to begin our project.'
             },
             {
                 title:'2. UI/UX Design',
+                icon: require("@/assets/img/icons/UIUX.svg"),
                 subtitle:'We create catchy and charming designs with the latest tools of designing to make it a best user-friendly experience.'
             },
             {
                 title:'3. Prototype',
+                icon: require("@/assets/img/icons/prototype.svg"),
                 subtitle:'After designing, you will get your prototype, which will be sent ahead for the development process for the product.'
             },
             {
                 title:'4. Development',
+                icon: require("@/assets/img/icons/development.svg"),
                 subtitle:'Development of mobile application/web/blockchain started using latest tools and technologies with transparency.'
             },
             {
                 title:'5. Quality Assurance',
+                icon: require("@/assets/img/icons/quality.svg"),
                 subtitle:'Hyperlink values quality and provides 100% bug free application with no compromisation in it.'
             },
             {
                 title:'6. Deployment',
+                icon: require("@/assets/img/icons/deployment.svg"),
                 subtitle:'After trial and following all processes, your app is ready to launch on the App store or Play Store.'
             },
             {
                 title:'7. Support & Maintenance',
+                icon: require("@/assets/img/icons/supportmaintain.svg"),
                 subtitle:'Our company offers you all support and the team is always ready to answer every query after deployment.'
             }
             ],

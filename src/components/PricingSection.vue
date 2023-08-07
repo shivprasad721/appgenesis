@@ -4,7 +4,7 @@
       <v-row align="center" justify="center">
         <v-col cols="10">
           <v-card style="width: 100%">
-            <h1 class="text-center pt-6 font-weight-light display-2">Planos</h1>
+            <div class="text-center pt-6 font-weight-light display-2 text-sm-h4 text-h6">Our Clients</div>
             <v-divider class="my-6"></v-divider>
             <v-row class="text-center">
               <v-col class="col-12 col-sm-6 col-md-4">
