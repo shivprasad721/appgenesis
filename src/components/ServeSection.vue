@@ -13,20 +13,17 @@
                         class="mx-auto pa-3"
                     > 
                         <div class=" d-flex justify-center">
-                            <div style="width:15%" class="mt-1">
-                                <img :src="card.icon" width="100%"> 
+                            <div  class="mt-1">
+                              <div class="circle1">
+                                <div class="circle2">
+                                <v-img :src="card.icon" width="100%"></v-img>
+                                </div>
+                                </div>
                             </div>  
                         </div>  
-                        <v-card-title class="d-flex justify-center">
-                          <v-icon
-                            class="mt-3"
-                            size="large"
-                            variant="text"
-                            icon="mdi-account-group"
-                            color="black"
-                          ></v-icon>
+                        <div class="d-flex justify-center text-sm-h6 text-subtitle-1 mt-2 mb-1">
                         {{card.title}}
-                        </v-card-title>
+                        </div>
                 </v-card>
               </v-col>
             </v-row>
@@ -66,12 +63,10 @@ export default {
             {
               icon: require("@/assets/img/icons/socialmedia.svg"),
               title:'Social Networking',
-               
             },
             {
               icon: require("@/assets/img/icons/realestate.svg"),
               title:'Real Estate',
-             
             },
             {
               icon: require("@/assets/img/icons/travel.svg"),
@@ -97,11 +92,41 @@ export default {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  height: 500px;
+  height: 600px;
 }
 
 #download .container,
 #download .row {
   height: 100%;
+}
+.circle1 {
+  border-radius: 50%;
+  width: 65px;
+  height: 65px;
+  background-color: #f0f8ff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.circle2 {
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  background-color: #e0e8fc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media only screen and (max-width: 768px) {
+  #download {
+  background-image: url("~@/assets/img/bgDownload.jpg");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 600px;
+  overflow: scroll;
+}
 }
 </style>

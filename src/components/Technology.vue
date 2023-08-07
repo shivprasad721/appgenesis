@@ -32,7 +32,6 @@
         <v-row align="center" justify="center">
           <v-col cols="10">
             <div class="font-weight-bold display-2 text-sm-h4 text-h6 " align="center" >Process We Follow</div>
-
             <v-row align="center" justify="center" class="my-3">
               <v-col cols="12" md="3" v-for="card of processData" :key="card.title">
                 <v-card 
@@ -43,9 +42,9 @@
                                 <img :src="card.icon" width="100%"> 
                             </div>  
                         </div>
-                        <v-card-title class="d-flex justify-center">
+                        <div class="d-flex justify-center text-subtitle-1 font-weight-bold font-sm-weight-regular  text-sm-h6 mt-3">
                         {{card.title}}
-                        </v-card-title>
+                        </div>
                         <v-card-subtitle   align="center">
                         <div>{{card.subtitle}}</div>
                         </v-card-subtitle>
@@ -223,5 +222,24 @@
     font-size: 18px;
 
   }
+  .circle1 {
+  border-radius: 50%;
+  width: 65px;
+  height: 65px;
+  background-color: #f0f8ff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.circle2 {
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  background-color: #e0e8fc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
   </style>
   

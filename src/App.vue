@@ -7,7 +7,7 @@
       <serveSection/>
       <!-- <about /> -->
       <!-- <download /> -->
-      <pricing />
+      <client />
       <contact />
     </v-main>
     <v-scale-transition>
@@ -44,7 +44,7 @@ import foote from "./components/Footer";
 import home from "./components/HomeSection";
 import about from "./components/AboutSection";
 // import download from "./components/DownloadSection";
-import pricing from "./components/PricingSection";
+import client from "./components/Client";
 import contact from "./components/ContactSection";
 import technology from "./components/Technology.vue";
 import serveSection from "./components/ServeSection.vue";
@@ -60,7 +60,7 @@ export default {
     about,
     serveSection,
     // download,
-    pricing,
+    client,
     contact,
     technology,
     ServeSection
