@@ -34,7 +34,7 @@
             <div class="font-weight-bold display-2 text-sm-h4 text-h6 " align="center" >Process We Follow</div>
             <v-row align="center" justify="center" class="my-3">
               <v-col cols="12" md="3" v-for="card of processData" :key="card.title">
-                <v-card 
+                <v-card elevation="8" rounded="lg"
                         class="mx-auto pa-3 "
                     >   
                         <div class=" d-flex justify-center">

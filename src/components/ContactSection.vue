@@ -5,7 +5,7 @@
         <v-col cols="10">
           <v-row justify="center">
             <v-col cols="12" sm="5">
-              <h1 class="font-weight-light display-1">Contate-nos</h1>
+              <h1 class="font-weight-light display-1">Contate us</h1>
               <h3 class="font-weight-light mt-3">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste
                 explicabo commodi quisquam asperiores dolore ad enim provident
@@ -26,7 +26,7 @@
                 <v-text-field
                     v-model="name"
                     :rules="nameRules"
-                    label="Nome"
+                    label="Full Name"
                     required
                 ></v-text-field>
 
@@ -40,20 +40,20 @@
                 <v-textarea
                     v-model="textArea"
                     :rules="textAreaRules"
-                    label="Mensagem"
+                    label="Message"
                     required
                 />
 
                 <v-btn
                     :disabled="!valid"
-                    color="primary"
+                    color="#240978"
                     :dark="valid"
                     rounded
                     block
                     class="mt-3"
                     @click="submit"
                 >
-                  Enviar
+                  Submit
                 </v-btn>
               </v-form>
             </v-col>

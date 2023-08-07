@@ -9,8 +9,8 @@
               <div class="font-weight-bold display-2 mb-2 text-center text-sm-h4 text-h6 ">Industries We Serve</div>
               <v-row align="center" justify="center" class="my-3">
               <v-col cols="12" md="3" v-for="card of processData" :key="card.title">
-                <v-card 
-                        class="mx-auto pa-3"
+                <v-card  
+                        class="mx-auto pa-3" rounded="lg"
                     > 
                         <div class=" d-flex justify-center">
                             <div  class="mt-1">
