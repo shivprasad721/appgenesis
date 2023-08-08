@@ -6,29 +6,45 @@
           <v-card style="width: 100%" >
             <div class="text-center pt-6 font-weight-light display-2 text-sm-h4 text-h6">Our Clients</div>
             <v-divider class="my-6"></v-divider>
+            <marquee loop="INFINITE" >
             <v-row class="text-center">
-             <v-col cols="12" sm="4">
+             <v-col cols="2" sm="2">
               <div class=" d-flex justify-center">
                 <div style="width:35%" class="mt-1">  
                    <v-img src="@/assets/clientlogo/trklogo (1).png" width="100%"></v-img>
                 </div>                
               </div>  
              </v-col>
-             <v-col cols="10" sm="4" class="d-flex align-center">
+             <v-col cols="10" sm="2" class="d-flex align-center">
               <div align="center">
                 <div style="width:75%" class="mt-1">  
-                   <v-img src="@/assets/clientlogo/shreerastu.png" width="100%"></v-img>
+                   <v-img src="@/assets/clientlogo/academy.jpg" width="100%"></v-img>
                 </div>                
               </div>  
              </v-col>
-             <v-col cols="10" sm="4" class="d-flex align-center">
+             <v-col cols="10" sm="2" class="d-flex align-center">
               <div class="d-flex justify-center ">
                 <div style="width:75%" class="mt-1">  
-                   <v-img src="@/assets/clientlogo/shreerastu.png" width="100%"></v-img>
+                   <v-img src="@/assets/clientlogo/shreerastu.jpg" width="100%"></v-img>
+                </div>                
+              </div>  
+             </v-col>
+             <v-col cols="10" sm="2" class="d-flex align-center">
+              <div class="d-flex justify-center ">
+                <div style="width:50%" class="mt-1">  
+                   <img src="@/assets/clientlogo/jaihind.jpg" width="100%"/>
+                </div>                
+              </div>  
+             </v-col>
+             <v-col cols="10" sm="2" class="d-flex align-center">
+              <div class="d-flex justify-center ">
+                <div style="width:50%" class="mt-1">  
+                   <img src="@/assets/clientlogo/realtime.jpg" width="100%"/>
                 </div>                
               </div>  
              </v-col>
             </v-row>
+          </marquee>
           </v-card>
         </v-col>
       </v-row>
