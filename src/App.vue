@@ -2,13 +2,7 @@
   <v-app>
     <navigation :color="color" :flat="flat" />
     <v-main class="pt-0">
-      <home />
-      <technology/>
-      <serveSection/>
-      <!-- <about /> -->
-      <!-- <download /> -->
-      <client />
-      <contact />
+      <HomePage/>
     </v-main>
     <v-scale-transition>
       <v-btn
@@ -42,7 +36,9 @@
       >
         <v-icon>mdi-phone</v-icon>Call now
       </v-btn>
+
     <foote />
+
   </v-app>
 </template>
 
@@ -76,7 +72,7 @@ import contact from "./components/ContactSection";
 import technology from "./components/Technology.vue";
 import serveSection from "./components/ServeSection.vue";
 import ServeSection from './components/ServeSection.vue';
-import HomePage from './Pages/home.vue'
+import HomePage from './Pages/homePage.vue'
 
 export default {
   name: "App",
@@ -88,6 +84,7 @@ export default {
     about,
     serveSection,
     // download,
+    HomePage,
     client,
     contact,
     technology,

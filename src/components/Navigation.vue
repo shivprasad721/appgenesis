@@ -11,11 +11,10 @@
       <v-list>
         <v-list-item>
           <v-list-item-avatar>
-            <img src="@/assets/img/mainlogo.jpg" alt="Logo" />
+            <img src="@/assets/img/logoIcon.jpg" alt="Logo" />
           </v-list-item-avatar>
           <v-list-item-content>
-            <v-list-item-title class="title">Calango</v-list-item-title>
-            <v-list-item-subtitle>WEB</v-list-item-subtitle>
+            <v-list-item-title class="title">App Genesis</v-list-item-title>
           </v-list-item-content>
         </v-list-item>
       </v-list>
@@ -97,10 +96,9 @@ export default {
     isXs: false,
     items: [
       ["mdi-home-outline", "Home", "#hero"],
-      ["mdi-information-outline", "Sobre", "#features"],
-      ["mdi-download-box-outline", "Download", "#download"],
-      ["mdi-currency-usd", "Preços", "#pricing"],
-      ["mdi-email-outline", "Contatos", "#contact"],
+      ["mdi-information-outline", "Services", "#about"],
+      ["mdi-download-box-outline", "Internship", "#download"],
+      ["mdi-email-outline", "Contact us", "#contact"],
     ],
   }),
   props: {

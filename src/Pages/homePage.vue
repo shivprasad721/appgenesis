@@ -7,40 +7,8 @@
         <!-- <download /> -->
         <client />
         <contact />
-      <v-scale-transition>
-        <v-btn
-          fab
-          v-show="fab"
-          v-scroll="onScroll"
-          dark
-          fixed
-          bottom
-          right
-          color="secondary"
-          @click="toTop"
-        >
-          <v-icon>mdi-arrow-up</v-icon>
-        </v-btn>
-      </v-scale-transition>
-      <v-btn
-          dark
-          class="whatsappIcon"
-          color="green"
-         href="https://api.whatsapp.com/send?phone=9492030195&text=Hi%20I%20would%20like%20to%20know%20more%20about%20your%20services."
-         target="_blank"
-        >
-          <v-icon>mdi-whatsapp</v-icon>Whatsapp
-        </v-btn>
-        <v-btn
-          dark
-          class="phoneIcon"
-          color="primary"
-          href="tel:9492030195"
-        >
-          <v-icon>mdi-phone</v-icon>Call now
-        </v-btn>
     </div>
- 
+
   </template>
   
   <style scoped>
@@ -75,7 +43,7 @@
   import ServeSection from '../components/ServeSection.vue';
   
   export default {
-    name: "home",
+    name: "homePage",
   
     components: {
       navigation,
