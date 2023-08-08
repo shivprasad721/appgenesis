@@ -21,7 +21,7 @@
                                 </div>
                             </div>  
                         </div>  
-                        <div class="d-flex justify-center text-sm-h6 text-subtitle-1 mt-2 mb-1">
+                        <div class="d-flex justify-center text-sm-h6 text-subtitle-2 mt-2 mb-1">
                         {{card.title}}
                         </div>
                 </v-card>

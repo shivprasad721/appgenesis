@@ -42,7 +42,7 @@
                                 <img :src="card.icon" width="100%"> 
                             </div>  
                         </div>
-                        <div class="d-flex justify-center text-subtitle-1 font-weight-bold font-sm-weight-regular  text-sm-h6 mt-3">
+                        <div class="d-flex justify-center font-weight-bold   mt-3" style="font-size:1.2rem !important">
                         {{card.title}}
                         </div>
                         <v-card-subtitle   align="center">

@@ -19,24 +19,26 @@
         <v-icon>mdi-arrow-up</v-icon>
       </v-btn>
     </v-scale-transition>
-    <v-btn
+    <div class="whatsappIcon">
+      <div class="mb-2">
+      <v-btn
         dark
-        class="whatsappIcon"
         color="green"
        href="https://api.whatsapp.com/send?phone=9492030195&text=Hi%20I%20would%20like%20to%20know%20more%20about%20your%20services."
        target="_blank"
       >
         <v-icon>mdi-whatsapp</v-icon>Whatsapp
       </v-btn>
+      </div>
       <v-btn
         dark
-        class="phoneIcon"
+        width="100%"
         color="primary"
         href="tel:9492030195"
       >
         <v-icon>mdi-phone</v-icon>Call now
       </v-btn>
-
+    </div>
     <foote />
 
   </v-app>
@@ -54,11 +56,7 @@
   bottom:40vh;
   right:0
 }
-.phoneIcon{
-  position: fixed;
-  bottom:35vh;
-  right:0
-}
+
 </style>
 
 <script>
