@@ -25,6 +25,23 @@
         <v-icon>mdi-arrow-up</v-icon>
       </v-btn>
     </v-scale-transition>
+    <v-btn
+        dark
+        class="whatsappIcon"
+        color="green"
+       href="https://api.whatsapp.com/send?phone=9492030195&text=Hi%20I%20would%20like%20to%20know%20more%20about%20your%20services."
+       target="_blank"
+      >
+        <v-icon>mdi-whatsapp</v-icon>Whatsapp
+      </v-btn>
+      <v-btn
+        dark
+        class="phoneIcon"
+        color="primary"
+        href="tel:9492030195"
+      >
+        <v-icon>mdi-phone</v-icon>Call now
+      </v-btn>
     <foote />
   </v-app>
 </template>
@@ -35,6 +52,16 @@
   background-attachment: fixed;
   background-position: center;
   background-size: cover;
+}
+.whatsappIcon{
+  position: fixed;
+  bottom:40vh;
+  right:0
+}
+.phoneIcon{
+  position: fixed;
+  bottom:35vh;
+  right:0
 }
 </style>
 
@@ -49,6 +76,7 @@ import contact from "./components/ContactSection";
 import technology from "./components/Technology.vue";
 import serveSection from "./components/ServeSection.vue";
 import ServeSection from './components/ServeSection.vue';
+import HomePage from './Pages/home.vue'
 
 export default {
   name: "App",
@@ -97,6 +125,9 @@ export default {
       if (typeof window === "undefined") return;
       const top = window.pageYOffset || e.target.scrollTop || 0;
       this.fab = top > 60;
+    },
+    gottoWhatsapp(){
+
     },
     toTop() {
       this.$vuetify.goTo(0);

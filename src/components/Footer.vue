@@ -25,7 +25,7 @@
                 </v-col>
                 <v-col>
                   <div class="d-flex justify-center text-subtitle-1 font-weight-bold font-sm-weight-regular  text-sm-h6 mt-3">
-                        Hyderabad
+                        Hyderabad, TS
                         </div>
                         <v-card-subtitle    align="center" class="font-weight-light" color="#efefef">
                         <div>Flat no 194,5-3-299/1/2,<br/>Kukatpally,Hyderabad-500072</div>

@@ -126,7 +126,7 @@
                     ]
             },
             {
-                title:'Backent',
+                title:'Backend',
                 languages:[{
                     language:'Codeigniter',
                     icon: require("@/assets/backend/codeigniter.svg")

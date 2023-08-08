@@ -5,14 +5,14 @@
         <v-col cols="10">
           <v-row justify="center">
             <v-col cols="12" sm="5">
-              <h1 class="font-weight-light display-1">Contate us</h1>
+              <h1 class="font-weight-light display-1">Contact us</h1>
               <h3 class="font-weight-light mt-3">
                 The expert in everything is once a beginner.
                 We are here with you to achieve your Goals.
                 We provide the best Services.Conect with us to make your Future bright
               </h3>
               <h3 class="font-weight-light mt-3">
-                Telephone: <a href="tel:9618570195">+919618570195</a>
+                Telephone: <a href="tel:9492030195">+919492030195</a>
               </h3>
               <h3 class="font-weight-light">
                 Email: info@appgenesis.in
