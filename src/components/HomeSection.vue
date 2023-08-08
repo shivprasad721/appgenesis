@@ -48,7 +48,7 @@
               {{ slide.desctiption }}
             </div>
             <div class="mt-3">
-              <v-btn size="x-large " color="#ffca58" class="pa-5">Get Started </v-btn>
+              <v-btn size="x-large " color="#ffca58" class="pa-5" @click="$vuetify.goTo('#contact')" >Get Started </v-btn>
             </div>
           </v-col>
           <v-col cols="12" sm="6" align="center">
