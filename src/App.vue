@@ -2,7 +2,7 @@
   <v-app>
     <navigation :color="color" :flat="flat" />
     <v-main class="pt-0">
-      <HomePage/>
+      <Internship/>
     </v-main>
     <v-scale-transition>
       <v-btn
@@ -71,6 +71,7 @@ import technology from "./components/Technology.vue";
 import serveSection from "./components/ServeSection.vue";
 import ServeSection from './components/ServeSection.vue';
 import HomePage from './Pages/homePage.vue'
+import Internship from './Pages/Internship.vue'
 
 export default {
   name: "App",
@@ -86,7 +87,8 @@ export default {
     client,
     contact,
     technology,
-    ServeSection
+    ServeSection,
+    Internship
 },
 
   data: () => ({

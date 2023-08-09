@@ -109,6 +109,7 @@ export default {
           
         ],
         slides: [
+        
           {
             color:'250361',
             heading:'Web App',
@@ -120,10 +121,20 @@ export default {
             desctiption:'Development Company',
             imgLink: require("@/assets/img/mobile-app-development.png")
           },
+          {
+            heading:'Internship',
+            desctiption:'Give the Best Start to Your career',
+            imgLink: require("@/assets/img/internship.png")
+          },
        
         ],
       videoId: "i8IvvHJssWE",
       features: [
+        {
+          img: require("@/assets/img/icon3.png"),
+          title: "Código Aberto",
+          text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+        },
         {
           img: require("@/assets/img/icon2.png"),
           title: "Design Limpo",
@@ -133,12 +144,8 @@ export default {
           img: require("@/assets/img/icon1.png"),
           title: "Dados Seguros",
           text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-        },
-        {
-          img: require("@/assets/img/icon3.png"),
-          title: "Código Aberto",
-          text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-        },
+        }
+       
       ],
     };
   },
