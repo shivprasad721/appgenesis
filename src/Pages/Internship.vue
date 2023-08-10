@@ -3,6 +3,7 @@
         <home />
         <internshipTechno/>
         <opening/>
+        <Achievements/>
         <!-- <download /> -->
         <contact />
     </div>
@@ -23,6 +24,7 @@
   import serveSection from "../components/ServeSection.vue";
   import ServeSection from '../components/ServeSection.vue';
 import Opening from '../components/opening.vue';
+import Achievements  from "../components/Achievements.vue";
   export default {
     name: "homePage",
   
@@ -38,6 +40,7 @@ import Opening from '../components/opening.vue';
       internshipTechno,
       Opening,
       ServeSection,
+      Achievements
   },
   
     data: () => ({

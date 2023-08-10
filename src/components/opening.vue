@@ -27,38 +27,42 @@
               </v-col>
             </v-row>
             <v-card class="pa-0 overflowCustom" >
-            <table  style="width:100%; " >
-                <thead  style="background-color: rgb(85, 84, 156); color:white">
-                    <th v-for=" head of headers" :key="head.title" class="py-3">
-                        {{ head.title }}
-                    </th>
-                </thead>
-                <tbody>
-                    <tr v-for="(internrow,idx) of  internship" :key="internrow.name" align="center" >
-                        <td v-for="head of headers" :key="head.title" :style="idx%2?'background:white':'background:#F0F0F0'" class="py-2">
-                            {{ internrow[head.value] }}
-                            <v-btn v-if="head.value=='apply'" color="green" class="text-white">Apply</v-btn>
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
+                <table  style="width:100%; " >
+                    <thead  style="background-color: rgb(85, 84, 156); color:white">
+                        <th v-for=" head of headers" :key="head.title" class="py-3">
+                            {{ head.title }}
+                        </th>
+                    </thead>
+                    <tbody>
+                        <tr v-for="(internrow,idx) of  internship" :key="internrow.name" align="center" >
+                            <td v-for="head of headers" :key="head.title" :style="idx%2?'background:white':'background:#F0F0F0'" class="py-2">
+                                {{ internrow[head.value] }}
+                                <v-btn v-if="head.value=='apply'" color="green" class="text-white">Apply</v-btn>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
             </v-card>
+            <div class="font-weight-bold display-2 text-sm-h4 text-h6 mt-8" align="center" >Certification courses</div>
 
             <v-row align="center" justify="center" class="my-3">
+                
             <v-col cols="12" md="3" v-for="card of courses" :key="card.title">
                 <v-card elevation="4" rounded="lg"
                         class="mx-auto"
                     >   
+
                             <v-img
                             :src="card.icon" width="100%"
                             cover height="200px"
                             ></v-img>
-                            <v-card-title>
+                            <v-card-subtitle class="pb-0 pt-1 mb-0">{{ card.duration }}</v-card-subtitle>
+                            <v-card-title class="pt-0">
                                 {{card.title}}
                             </v-card-title>
 
-                            <v-card-subtitle>
-                            1,000 miles of wonder
+                            <v-card-subtitle class="d-flex items-center pb-0">
+                                <v-icon style="color:#ffd500; font-size:1.2rem">mdi-star</v-icon><span class="ml-2">{{ card.Retting }}</span>
                             </v-card-subtitle>
 
                             <v-card-actions>
@@ -157,46 +161,61 @@
             ],
             courses:[
             {
-                title:'1. Requirement Gathering',
+                title:'Web Development',
                 show:false,
-                icon: require("@/assets/img/icons/required.svg"),
-                des:'We follow the first and foremost priority of gathering requirements, resources, and information to begin our project.'
+                icon: require("@/assets/img/internship/web_development.webp"),
+                Retting:'4.2',
+                duration:'8 weeks or 16 weeks',
+                des:'Learn Full Stack Web Development: HTML/CSS, MySQL, PHP, JavaScript, and React and build a website from scratch!'
             },
             {
-                title:'2. UI/UX Design',
+                title:'Programming with Python',
                 show:false,
-                icon: require("@/assets/img/icons/UIUX.svg"),
-                des:'We create catchy and charming designs with the latest tools of designing to make it a best user-friendly experience.'
+                icon: require("@/assets/img/internship/python.webp"),
+                Retting:'4.1',
+                duration:'8 weeks or 16 weeks',
+                des:'Learn Python to master one of the most popular programming languages of the 21st century!'
             },
             {
-                title:'3. Prototype',
+                title:'Digital Marketing',
                 show:false,
-                icon: require("@/assets/img/icons/prototype.svg"),
-                des:'After designing, you will get your prototype, which will be sent ahead for the development process for the product.'
+                Retting:'4.1',
+                duration:'8 weeks or 16 weeks',
+                icon: require("@/assets/img/internship/digital_marketing.webp"),
+                des:'Become an ace digital marketer - learn Google Analytics, Google Ads, SEO, social media marketing, email marketing, and more.'
             },
             {
-                title:'4. Development',
+                title:'Machine Learning',
                 show:false,
-                icon: require("@/assets/img/icons/development.svg"),
-                des:'Development of mobile application/web/blockchain started using latest tools and technologies with transparency.'
+                Retting:'4.5',
+                duration:'8 weeks or 16 weeks',
+                icon: require("@/assets/img/internship/machine_learning.webp"),
+                des:'Learn Python and 6 most important Machine Learning algorithms to build predictive models'
             },
             {
-                title:'5. Quality Assurance',
+                title:'Advanced Excel',
                 show:false,
-                icon: require("@/assets/img/icons/quality.svg"),
-                des:'Hyperlink values quality and provides 100% bug free application with no compromisation in it.'
+                Retting:'4.4',
+                duration:'8 weeks or 16 weeks',
+                icon: require("@/assets/img/internship/excel.webp"),
+                des:'Learn Excel to become a pro at MS-Excel formulas & functions, data visualization, pivot tables, and more'
             },
             {
-                title:'6. Deployment',
+                title:'Data Science',
                 show:false,
-                icon: require("@/assets/img/icons/deployment.svg"),
-                des:'After trial and following all processes, your app is ready to launch on the App store or Play Store.'
+                show:false,
+                Retting:'4.1',
+                duration:'8 weeks or 16 weeks',
+                icon: require("@/assets/img/internship/data_science.webp"),
+                des:'Master the building blocks of Data Science - Python, Statistics, and Predictive Modeling'
             },
             {
-                title:'7. Support & Maintenance',
+                title:'SQL for Analytics',
                 show:false,
-                icon: require("@/assets/img/icons/supportmaintain.svg"),
-                subtitle:'Our company offers you all support and the team is always ready to answer every query after deployment.'
+                Retting:'4.0',
+                duration:'8 weeks or 16 weeks',
+                icon: require("@/assets/img/internship/sql-data-analytics.webp"),
+                subtitle:'Learn about popular business models, probability distribution, linear programming, and predictive analytics to become a pro in analysing business data!'
             }
             ],
             items:[],
