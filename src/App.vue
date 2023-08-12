@@ -2,7 +2,7 @@
   <v-app>
     <navigation :color="color" :flat="flat" />
     <v-main class="pt-0">
-      <Internship/>
+      <router-view></router-view>
     </v-main>
     <v-scale-transition>
       <v-btn
@@ -40,7 +40,6 @@
       </v-btn>
     </div>
     <foote />
-
   </v-app>
 </template>
 

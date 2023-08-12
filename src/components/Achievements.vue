@@ -45,30 +45,34 @@
             <v-row align="center" justify="center">
               <v-col cols="12"  class="text-left">
                 <div class="font-weight-bold display-2 my-2 text-center text-sm-h5 text-h6 ">How learners like you are achieving their goals</div>
-                <v-row align="center" justify="center" class="my-3"> 
-                <v-col cols="12" md="4" v-for="card of reviewData" :key="card.name" class="d-flex flex-column"  >
-                  <v-card  
-                          class="pa-3" rounded="lg"  
-                      >  
-                      <!-- <div class="comman">&#8216;&#8216;</div> -->
-                          <div class="d-flex justify-start font-weight-bold mt-2 mb-2 " >
-                          {{card.Feedback}}
-                          </div><hr>
-                          <div class="mt-3">
-                            <div class="d-flex justify-start font-weight-bold text-subtitle-2 align-center" >
-                                <div class="iconCircle white--text mr-2">{{card.Student[0]}}</div>
-                                    {{card.Student}}, {{ card.group }}
+                <div class="swiper mySwiper" >
+                    <div align="center" justify="center" class="my-3 swiper-wrapper px-3 pr-3" > 
+                    <v-card v-for="card of reviewData" :key="card.name" class="swiper-slide"  style="border:1px solid rgb(82, 122, 255)">
+                      <div 
+                              class="pa-3 " rounded="lg"  
+                          >  
+                          <!-- <div class="comman">&#8216;&#8216;</div> -->
+                              <div class="d-flex justify-center font-weight-bold mt-2 mb-2 " >
+                              {{card.Feedback}}
+                              </div><hr>
+                              <div class="mt-3">
+                                <div class="d-flex justify-center font-weight-bold text-subtitle-2 align-center" >
+                                    <div class="iconCircle white--text mr-2">{{card.Student[0]}}</div>
+                                        {{card.Student}}, {{ card.group }}
+                                </div>
+                                <div class=" font-weight-light text-subtitle-2 align-center items-center" >
+                                    <div class="d-flex justify-center">Guided by- {{ card.GUIDE }}</div>
+                                    <div  class="d-flex justify-center">Principal Name- {{ card["PRINCIPAL "]  }} </div>
+                                    <div  class="d-flex justify-center">{{ card.college }}
+                                    </div>
+                                </div>
                             </div>
-                            <div class=" font-weight-light text-subtitle-2 align-center pl-8" >
-                                Guided by- {{ card.GUIDE }} <br/>
-                                Principal Name- {{ card["PRINCIPAL "]  }} <br/>
-                                {{ card.college }}
-                            </div>
-                        </div>
-                  </v-card>
-                </v-col>
-              </v-row>
-                
+                      </div>
+                    </v-card>
+                  </div>
+                  <!-- <div class="swiper-button-next"></div>
+                  <div class="swiper-button-prev"></div> -->
+               </div>
               </v-col>
             </v-row>
           </v-col>
@@ -122,6 +126,37 @@
    }),
    mounted(){
     this.reviewData = reviewData.Data
+    this.insilize();
+   },
+   methods:{
+    insilize(){
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 1,
+        spaceBetween: 0,
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+        breakpoints: {
+            200: {
+                slidesPerView: 1,
+                spaceBetween: 10,
+            },
+            640: {
+                slidesPerView: 2,
+                spaceBetween: 20,
+            },
+            768: {
+                slidesPerView: 3,
+                spaceBetween: 20,
+            },
+            1024: {
+                slidesPerView: 3,
+                spaceBetween: 20,
+            },
+        },
+    })
+    }
    }
   }
   </script>
@@ -182,4 +217,7 @@
     overflow: scroll;
   }
   }
+  </style>
+  <style>
+
   </style>

@@ -13,7 +13,7 @@
         "particles.vue": "^3.12.0",
         "tsparticles-slim": "^2.12.0",
         "vue": "^2.6.12",
-        "vue-router": "^4.2.4",
+        "vue-router": "^3.6.5",
         "vue-youtube-embed": "^2.2.2",
         "vuetify": "^2.7.1"
     },
