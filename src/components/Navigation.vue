@@ -26,7 +26,7 @@
           v-for="([icon, text, link], i) in items"
           :key="i"
           link
-          @click="$vuetify.goTo(link)"
+          :to="link"
         >
           <v-list-item-icon class="justify-center">
             <v-icon>{{ icon }}</v-icon>
@@ -95,9 +95,9 @@ export default {
     drawer: null,
     isXs: false,
     items: [
-      ["mdi-home-outline", "Home", "#hero"],
+      ["mdi-home-outline", "Home", "/"],
       ["mdi-information-outline", "Services", "#about"],
-      ["mdi-download-box-outline", "Internship", "#download"],
+      ["mdi-download-box-outline", "Internship", "/intern"],
       ["mdi-email-outline", "Contact us", "#contact"],
     ],
   }),
