@@ -37,7 +37,7 @@
                         <tr v-for="(internrow,idx) of  internship" :key="internrow.name" align="center" >
                             <td v-for="head of headers" :key="head.title" :style="idx%2?'background:white':'background:#F0F0F0'" class="py-2">
                                 {{ internrow[head.value] }}
-                                <v-btn v-if="head.value=='apply'" color="green" class="text-white">Apply</v-btn>
+                                <v-btn v-if="head.value=='apply'" color="green" class="white-text" style="color:white" to="/apply" target="_blank">Apply</v-btn>
                             </td>
                         </tr>
                     </tbody>
@@ -141,20 +141,26 @@
             ],
             internship: [
                 {
-                    internship: 'Backend Web Development',
-                    time: '3 Months',
-                    date: '3/08/2023',
+                    internship: 'Web Development',
+                    time: '8 weeks or 16 weeks',
+                    date: '23/08/2023',
                     location: 'Online',
                 },
                 {
-                    internship: 'Frontend Web Development',
-                    time: '3 Months',
+                    internship: 'Python with Flask',
+                    time: '8 weeks or 16 weeks',
                     date: '25/08/2023',
                     location: 'Online',
                 },
                 {
-                    internship: 'Fullstack Web Development',
-                    time: '3 Months',
+                    internship: 'Business Analyst & Advanced Excel',
+                    time: '8 weeks or 16 weeks',
+                    date: 'Ongoing',
+                    location: 'Online',
+                },
+                {
+                    internship: 'Database Developer',
+                    time: '8 weeks or 16 weeks',
                     date: '30/08/2023',
                     location: 'Online',
                 },

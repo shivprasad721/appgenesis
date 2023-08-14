@@ -11,7 +11,7 @@
                 <v-row align="center" justify="center" class="my-3">
                 <v-col cols="12" md="2" v-for="card of processData" :key="card.title" >
                   <v-card  
-                          class=" pa-3" align='center' rounded="lg" color="rgb(20 1 55)" style="min-height:230px"
+                          class=" pa-3" align='center' elevation="12"  rounded="lg" color="rgb(20 1 55)" 
                       > 
                           <div class=" d-flex justify-center ">
                               <div  class="mt-1">
@@ -47,31 +47,33 @@
                 <div class="font-weight-bold display-2 my-2 text-center text-sm-h5 text-h6 ">How learners like you are achieving their goals</div>
                 <div class="swiper mySwiper" >
                     <div align="center" justify="center" class="my-3 swiper-wrapper px-3 pr-3" > 
-                    <v-card v-for="card of reviewData" :key="card.name" class="swiper-slide"  style="border:1px solid rgb(82, 122, 255)">
-                      <div 
-                              class="pa-3 " rounded="lg"  
-                          >  
-                          <!-- <div class="comman">&#8216;&#8216;</div> -->
-                              <div class="d-flex justify-center font-weight-bold mt-2 mb-2 " >
-                              {{card.Feedback}}
-                              </div><hr>
-                              <div class="mt-3">
-                                <div class="d-flex justify-center font-weight-bold text-subtitle-2 align-center" >
-                                    <div class="iconCircle white--text mr-2">{{card.Student[0]}}</div>
-                                        {{card.Student}}, {{ card.group }}
-                                </div>
-                                <div class=" font-weight-light text-subtitle-2 align-center items-center" >
-                                    <div class="d-flex justify-center">Guided by- {{ card.GUIDE }}</div>
-                                    <div  class="d-flex justify-center">Principal Name- {{ card["PRINCIPAL "]  }} </div>
-                                    <div  class="d-flex justify-center">{{ card.college }}
-                                    </div>
-                                </div>
-                            </div>
-                      </div>
-                    </v-card>
+                      <v-card v-for="card of reviewData" :key="card.name" class="swiper-slide"  color="rgb(20 1 55)" rounded="lg"  >
+                        <div 
+                                class="pa-3 "  
+                            >  
+                            <!-- <div class="comman">&#8216;&#8216;</div> -->
+                                <div class="d-flex justify-center font-weight-bold mt-2 mb-2 white--text" >
+                                {{card.Feedback}}
+                                </div><hr>
+                                <div class="mt-3">
+                                  <div class="d-flex justify-center font-weight-bold text-subtitle-2 align-center white--text" >
+                                      <div class="iconCircle white--text mr-2 " >{{card.Student[0]}}</div>
+                                          {{card.Student}}, {{ card.group }}
+                                  </div>
+                                  <div class=" font-weight-light text-subtitle-2 align-center items-center" >
+                                      <div class="d-flex justify-center white--text">Guided by- {{ card.GUIDE }}</div>
+                                      <div  class="d-flex justify-center white--text">Principal Name- {{ card["PRINCIPAL "]  }} </div>
+                                      <div  class="d-flex justify-center white--text">{{ card.college }}
+                                      </div>
+                                  </div>
+                              </div>
+                        </div>
+                      </v-card>
                   </div>
-                  <!-- <div class="swiper-button-next"></div>
-                  <div class="swiper-button-prev"></div> -->
+                  <div class="swiper-pagination"></div>
+
+                  <div class="swiper-button-next"></div>
+                  <div class="swiper-button-prev"></div>
                </div>
               </v-col>
             </v-row>
@@ -125,14 +127,23 @@
     reviewData:[]
    }),
    mounted(){
-    this.reviewData = reviewData.Data
+    for(let comment of reviewData.Data){
+      if(comment.Feedback.length>5){
+        this.reviewData.push(comment)
+      }
+    }
     this.insilize();
    },
    methods:{
     insilize(){
       var swiper = new Swiper(".mySwiper", {
-        slidesPerView: 1,
+        slidesPerView: 3,
         spaceBetween: 0,
+  
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
         navigation: {
             nextEl: '.swiper-button-next',
             prevEl: '.swiper-button-prev',
@@ -147,7 +158,7 @@
                 spaceBetween: 20,
             },
             768: {
-                slidesPerView: 3,
+                slidesPerView: 2,
                 spaceBetween: 20,
             },
             1024: {
@@ -206,6 +217,12 @@
   .comman{
     font-size:2rem;
   }
+  .swiper-button-prev{
+    color:#741bf9
+  }
+  .swiper-button-next{
+    color:#741bf9
+  }
   @media only screen and (max-width: 768px) {
     #achievement {
     background-image: url("~@/assets/img/bgDownload.jpg");
@@ -218,6 +235,4 @@
   }
   }
   </style>
-  <style>
-
-  </style>
+  

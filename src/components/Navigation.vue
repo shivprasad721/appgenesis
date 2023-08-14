@@ -5,13 +5,13 @@
       app
       temporary
       dark
-      
+    
       src="@/assets/img/bgDrawer.jpg"
     >
       <v-list>
         <v-list-item>
-          <v-list-item-avatar>
-            <img src="@/assets/img/logoIcon.jpg" alt="Logo" />
+          <v-list-item-avatar   >
+            <img src="@/assets/img/logoIcon.jpg" alt="Logo"  to="/"/>
           </v-list-item-avatar>
           <v-list-item-content>
             <v-list-item-title class="title">App Genesis</v-list-item-title>
@@ -47,8 +47,8 @@
       class="px-15"
       :class="{ expand: flat }"
     >
-      <v-toolbar-title >
-        <v-img src="@/assets/img/mainlogo.jpg" max-width="170px" />
+      <v-toolbar-title  to="/">
+        <v-img src="@/assets/img/mainlogo.jpg" max-width="170px"  />
       </v-toolbar-title>
       <v-spacer />
       <v-app-bar-nav-icon

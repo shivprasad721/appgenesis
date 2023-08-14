@@ -6,6 +6,7 @@ import VueParticles from 'vue-particles'
 import VueRouter from 'vue-router'
 import HomePage from './Pages/homePage.vue'
 import Internship from './Pages/Internship.vue'
+import apply from './Pages/googleform.vue'
 
 Vue.use(VueRouter)
 Vue.use(VueParticles)
@@ -13,7 +14,8 @@ Vue.use(VueParticles)
 // import 'firebase/firestore'
 const routes = [
   { path: '/', component: HomePage },
-  { path: '/intern', component: Internship }
+  { path: '/intern', component: Internship },
+  { path: '/apply', component: apply }
 
 ]
 Vue.use(VueYouTubeEmbed)
