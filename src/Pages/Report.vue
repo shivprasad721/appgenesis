@@ -1,13 +1,7 @@
 <template>
-    <div>     
-        <home />
-        <internshipTechno/>
-        <colleges/>
-        <approvedby/>
-        <opening/>
-        <Achievements/>
-        <!-- <download /> -->
-        <contact />
+    <div style="margin-top:80px">  
+        <iframe :src="'https://docs.google.com/forms/d/e/'+routerLink+'/viewform?embedded=true'" width="100%" height="800" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+        sdf;sjkdfsldkfjs;dlfsdf sd;lfkjsd f;lskdfj s;dlfksjdf; sdlfkjsd flskdjf
     </div>
 
   </template>
@@ -25,17 +19,14 @@
   import internshipTechno from "../components/InternshipTechnology.vue";
   import serveSection from "../components/ServeSection.vue";
   import ServeSection from '../components/ServeSection.vue';
-  import colleges from '../components/Colleges.vue'
 import Opening from '../components/opening.vue';
 import Achievements  from "../components/Achievements.vue";
-import approvedby from '../components/ApprovedBy.vue'
   export default {
-    name: "homePage",
+    name: "report",
   
     components: {
       navigation,
       foote,
-      colleges,
       home,
       about,
       serveSection,
@@ -45,16 +36,18 @@ import approvedby from '../components/ApprovedBy.vue'
       internshipTechno,
       Opening,
       ServeSection,
-      Achievements,
-      approvedby
+      Achievements
   },
   
     data: () => ({
       fab: null,
       color: "",
       flat: null,
+      routerLink:''
     }),
-  
+    mounted(){
+      this.routerLink = this.$route.params.link
+    },
     created() {
       const top = window.pageYOffset || 0;
       if (top <= 60) {

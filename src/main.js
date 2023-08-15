@@ -7,6 +7,11 @@ import VueRouter from 'vue-router'
 import HomePage from './Pages/homePage.vue'
 import Internship from './Pages/Internship.vue'
 import apply from './Pages/googleform.vue'
+import privacy from './Pages/privacy.vue'
+import payment from './Pages/payment.vue'
+import UPIPayment from './Pages/UPIpayment.vue'
+import report from './Pages/Report.vue'
+import dailyReport from './Pages/DailyReport.vue'
 
 Vue.use(VueRouter)
 Vue.use(VueParticles)
@@ -15,7 +20,13 @@ Vue.use(VueParticles)
 const routes = [
   { path: '/', component: HomePage },
   { path: '/intern', component: Internship },
-  { path: '/apply', component: apply }
+  { path: '/apply', component: apply },
+  { path: '/privacy', component: privacy },
+  { path: '/payment', component: payment },
+  { path: '/upi-payment', component: UPIPayment },
+  { path: '/report/:link', component: report },
+  { path: '/daily-report', component: dailyReport }
+
 
 ]
 Vue.use(VueYouTubeEmbed)

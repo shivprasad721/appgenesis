@@ -67,6 +67,9 @@
         <v-btn text  color="black" to="/intern">
           <span class="mr-2" >Internship</span>
         </v-btn>
+        <v-btn text  color="black" to="/daily-report">
+          <span class="mr-2" >Daily Report</span>
+        </v-btn>
         <!-- <v-btn text  color="black" @click="$vuetify.goTo('#pricing')">
           <span class="mr-2"></span>
         </v-btn> -->
@@ -97,7 +100,8 @@ export default {
     items: [
       ["mdi-home-outline", "Home", "/"],
       ["mdi-information-outline", "Services", "#about"],
-      ["mdi-download-box-outline", "Internship", "/intern"],
+      ["mdi-book-open-variant", "Internship", "/intern"],
+      ["mdi-pencil-box-outline", "Daily Report", "/daily-report"],
       ["mdi-email-outline", "Contact us", "#contact"],
     ],
   }),

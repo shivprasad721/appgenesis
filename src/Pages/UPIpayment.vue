@@ -1,15 +1,14 @@
 <template>
-    <div>     
-        <home />
-        <internshipTechno/>
-        <colleges/>
-        <approvedby/>
-        <opening/>
-        <Achievements/>
-        <!-- <download /> -->
-        <contact />
-    </div>
-
+    <section>
+    <v-container style="margin-top:80px;" class="pa-3 px-5">
+        <div  class="font-weight-bold display-2 mb-2 text-center text-sm-h4 text-h6 mb-3" style="color:rgb(35, 0, 100)">Payment Now</div>
+        <div class="d-flex justify-center">
+          <div style="width:50%" > 
+                      <v-img src="@/assets/img/scanner.jpg" width="100%" height="100%"/>
+          </div>
+        </div>
+    </v-container>
+</section>
   </template>
   
  
@@ -25,17 +24,14 @@
   import internshipTechno from "../components/InternshipTechnology.vue";
   import serveSection from "../components/ServeSection.vue";
   import ServeSection from '../components/ServeSection.vue';
-  import colleges from '../components/Colleges.vue'
 import Opening from '../components/opening.vue';
 import Achievements  from "../components/Achievements.vue";
-import approvedby from '../components/ApprovedBy.vue'
   export default {
-    name: "homePage",
+    name: "UPIPayment",
   
     components: {
       navigation,
       foote,
-      colleges,
       home,
       about,
       serveSection,
@@ -45,8 +41,7 @@ import approvedby from '../components/ApprovedBy.vue'
       internshipTechno,
       Opening,
       ServeSection,
-      Achievements,
-      approvedby
+      Achievements
   },
   
     data: () => ({
