@@ -4,7 +4,7 @@
         <v-row align="center" justify="center">
           <v-col cols="10">
             <div class="font-weight-bold display-2 text-sm-h4 text-h6  mb-2" align="center" >Daily Work Report of Interns</div>
-            <v-btn  color="blue" class="white-text mb-2" href="" style="color:white" target="_blank" >Apply for Offer Latter</v-btn>
+            <v-btn  color="blue" class="white-text mb-2" href="https://forms.gle/hcM7Kwnh8b6n2QYA8" style="color:white" target="_blank" >Apply for Offer Latter</v-btn>
             <v-card class="pa-0 overflowCustom" >
                 <table  style="width:100%; " >
                     <thead  style="background-color: rgb(85, 84, 156); color:white">
