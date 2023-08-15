@@ -16,7 +16,7 @@
                         <tr v-for="(internrow,idx) of  internship" :key="internrow.name" align="center" >
                             <td v-for="head of headers" :key="head.title" :style="idx%2?'background:white':'background:#F0F0F0'" class="py-2">
                                 <div v-if="head.value=='internship' ">{{ internrow[head.value] }}</div>
-                                <v-btn v-if="head.value!=='internship' && head.value!=='DailyTask'" color="green" class="white-text" style="color:white" :to="'/report/'+internrow[head.value]" target="_blank">{{head.value=='DailyReport'||head.value=='DailyExam'?'Start':'Apply'}}</v-btn>
+                                <v-btn v-if="head.value!=='internship' && head.value!=='DailyTask'" color="green" class="white-text" style="color:white" :to="'/report/'+internrow[head.value]" target="_blank">{{head.value=='DailyReport'||head.value=='DailyExam'?'Start':'Download'}}</v-btn>
                                 <v-btn v-if="head.value=='DailyTask'" color="green" class="white-text" style="color:white" :href="internrow[head.value]" target="_blank">Start</v-btn>
                             </td>
                         </tr>
