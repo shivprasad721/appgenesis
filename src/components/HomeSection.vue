@@ -48,7 +48,7 @@
               {{ slide.desctiption }}
             </div>
             <div class="mt-3">
-              <v-btn size="x-large " color="#ffca58" class="pa-5" @click="$vuetify.goTo('#contact')" >Get Started </v-btn>
+              <v-btn size="x-large " color="#ffca58" class="pa-5" :to="slide.link" target="_blank" v-if="slide.heading=='Internship'">Get Started </v-btn>
             </div>
           </v-col>
           <v-col cols="12" sm="6" align="center">
@@ -114,17 +114,20 @@ export default {
             color:'250361',
             heading:'Web App',
             desctiption:'Development Company',
-            imgLink: require("@/assets/img/web-development.png")
+            imgLink: require("@/assets/img/web-development.png"),
+            link:'#'
           },
           {
             heading:'Mobile App',
             desctiption:'Development Company',
+            link:'#',
             imgLink: require("@/assets/img/mobile-app-development.png")
           },
           {
             heading:'Internship',
             desctiption:'Give the Best Start to Your career',
-            imgLink: require("@/assets/img/internship.png")
+            imgLink: require("@/assets/img/internship.png"),
+            link:'/apply'
           },
        
         ],
