@@ -8,30 +8,30 @@
               <v-divider class="my-6"></v-divider>
               <marquee loop="INFINITE" >
               <v-row class="text-center">
-               <v-col cols="10" sm="2" class="d-flex align-center">
+               <v-col cols="2"  class="d-flex align-center">
                 <div align="center">
-                  <div style="width:75%" class="mt-1">  
+                  <div style="width:100%" class="mt-1">  
                      <img src="@/assets/collegelogo/GDC.jpg" width="100%"/>
                   </div>                
                 </div>  
                </v-col>
-               <v-col cols="10" sm="2" class="d-flex align-center">
+               <v-col cols="2" class="d-flex align-center">
                 <div class="d-flex justify-center ">
                   <div style="width:100%" class="mt-1">  
                      <img src="@/assets/collegelogo/govcoll.jpg" width="100%"/>
                   </div>                
                 </div>  
                </v-col>
-               <v-col cols="10" sm="2" class="d-flex align-center">
+               <v-col cols="2"  class="d-flex align-center">
                 <div class="d-flex justify-center ">
-                  <div style="width:50%" class="mt-1">  
+                  <div style="width:100%" class="mt-1">  
                      <img src="@/assets/collegelogo/pithapur.jpg" width="100%"/>
                   </div>                
                 </div>  
                </v-col>
-               <v-col cols="10" sm="2" class="d-flex align-center">
+               <v-col cols="2"  class="d-flex align-center">
                 <div class="d-flex justify-center ">
-                  <div style="width:50%" class="mt-1">  
+                  <div style="width:100%" class="mt-1">  
                      <img src="@/assets/collegelogo/sa.jpg" width="100%"/>
                   </div>                
                 </div>  

@@ -135,7 +135,6 @@
                 },
                 { title: 'Time Period', value: 'time' },
                 { title: 'Date', value: 'date' },
-                { title: 'Location', value: 'location' },
                 { title: 'Apply', value: 'apply' },
                
             ],
