@@ -5,6 +5,7 @@
           <v-col cols="10">
             <div class="font-weight-bold display-2 text-sm-h4 text-h6  mb-2" align="center" >Daily Work Report of Interns</div>
             <v-btn  color="blue" class="white-text mb-2" to="/report/1FAIpQLSeIa6qzdt_rDwwdV3oi4GiUoyq_k91MywdQCQZUSyQCyxjcvA"  style="color:white" target="_blank" >Apply for Offer Letter</v-btn>
+            <v-btn  color="primary" class="white-text mb-2 ml-2 " to="/offer-letter"  style="color:white" target="_blank" >Download Offer Letter</v-btn>
             <v-card class="pa-0 overflowCustom" >
                 <table  style="width:100%; " >
                     <thead  style="background-color: rgb(85, 84, 156); color:white">
