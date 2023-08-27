@@ -12,7 +12,7 @@ import payment from './Pages/payment.vue'
 import UPIPayment from './Pages/UPIpayment.vue'
 import report from './Pages/Report.vue'
 import dailyReport from './Pages/DailyReport.vue'
-
+import offerLetter from './Pages/OfferLetterTemplate.vue'
 Vue.use(VueRouter)
 Vue.use(VueParticles)
 // import firebase from 'firebase/app'
@@ -25,7 +25,8 @@ const routes = [
   { path: '/payment', component: payment },
   { path: '/upi-payment', component: UPIPayment },
   { path: '/report/:link', component: report },
-  { path: '/daily-report', component: dailyReport }
+  { path: '/daily-report', component: dailyReport },
+  { path: '/offer-letter', component: offerLetter }
 
 
 ]

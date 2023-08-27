@@ -1,7 +1,6 @@
 <template>
     <div style="margin-top:80px">  
         <iframe :src="'https://docs.google.com/forms/d/e/'+routerLink+'/viewform?embedded=true'" width="100%" height="800" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
-        sdf;sjkdfsldkfjs;dlfsdf sd;lfkjsd f;lskdfj s;dlfksjdf; sdlfkjsd flskdjf
     </div>
 
   </template>
