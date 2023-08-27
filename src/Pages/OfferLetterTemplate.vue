@@ -1,11 +1,15 @@
 <template>
-    <div style="margin-top:80px; background-color:white">  
+    <div style="margin-top:100px; background-color:white">  
       <v-container class="d-flex justify-center">
-        <div class="px-12" style="width:30%"> 
+        <v-row>
+        <div class="px-12 customWidth mt-2" > 
           <v-text-field label="Enter your intern id" v-model="selectedInternID"></v-text-field>    
         </div>
-        <v-btn class="mt-3" @click="getTemplateData()" color="green">Submit</v-btn>
-        <v-btn class="mt-3" @click="downloadPdf()" v-if="templateData" color="primary ml-2">Download PDF</v-btn>
+        <div class="customButton">
+        <v-btn class="mt-3 " @click="getTemplateData()" color="green">Submit</v-btn>
+      </div>
+        <v-btn class="mt-3 " @click="downloadPdf()" v-if="templateData" color="primary ml-2">Download PDF</v-btn>
+        </v-row>
       </v-container >
       <div class="d-flex justify-center red--text text-h6">{{ errorMessage }}</div>
 
@@ -236,5 +240,17 @@ import Data from '../components/JSONData/InternshipOfferLetterData.json'
 p{
   margin: 10px 0px 10px 0px;
 }
-
+.customWidth{
+  width:30%;
+}
+@media only screen and (max-width: 600px)
+{
+  .customWidth{
+    width:100%
+  }
+  .customButton{
+    margin-left: 44px !important;
+    margin-bottom: 10px;
+  }
+}
   </style>
