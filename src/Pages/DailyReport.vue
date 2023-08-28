@@ -68,7 +68,7 @@
                     internship: 'Business Analyst & Advanced Excel',
                     DailyTask:'https://youtu.be/FAOmOCEdVCo',
                     DailyReport: '1FAIpQLSeOjG9Jtci1T8vjZW08sAa5QTj6yjChXH7MCQGRzL-x1NqKdQ',
-                    DailyExam: '1FAIpQLSf83IOxUzndSP7r3W8dG4Gu5AgsDb8Uig2FQYwepfaLJDFk6Q',
+                    DailyExam: '1FAIpQLScHkyXR-Dra0ge8w8yhdMkdqKrs_t6ZEH3qefX5-qnwetg2Ug',
                     certificate: '',
                     workDone:''
                 },
