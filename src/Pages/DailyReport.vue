@@ -41,7 +41,7 @@
                 },
                 { title: 'Daily Task', value: 'DailyTask' },
                 { title: 'Daily Work Report', value: 'DailyReport' },
-                { title: 'Daily Exam', value: 'DailyExam' },
+                { title: 'Daily Exams', value: 'DailyExam' },
                 { title: 'Request for Certificate', value: 'certificate' },
                 { title: 'Request for work done Report', value: 'workDone' },
 
