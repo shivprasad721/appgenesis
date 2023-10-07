@@ -39,11 +39,11 @@
                 {
                     title: 'Internship with course', value: 'internship'
                 },
-                { title: 'Daily Task', value: 'DailyTask' },
-                { title: 'Daily Work Report', value: 'DailyReport' },
-                { title: 'Daily Exams', value: 'DailyExam' },
-                { title: 'Request for Certificate', value: 'certificate' },
-                { title: 'Request for work done Report', value: 'workDone' },
+                // { title: 'Daily Task', value: 'DailyTask' },
+                { title: 'Complete LogBook', value: 'DailyReport' },
+                // { title: 'Daily Exams', value: 'DailyExam' },
+                // { title: 'Request for Certificate', value: 'certificate' },
+                // { title: 'Request for work done Report', value: 'workDone' },
 
                
             ],
@@ -51,7 +51,7 @@
                 {
                     internship: 'Web Development',
                     DailyTask:'https://youtu.be/FAOmOCEdVCo',
-                    DailyReport: '1FAIpQLSeOjG9Jtci1T8vjZW08sAa5QTj6yjChXH7MCQGRzL-x1NqKdQ',
+                    DailyReport: '1FAIpQLSdHlU3Rd_XWK7VJmcJWP_p8VbsE8wCmdkRcI8sczqMto4sdIw',
                     DailyExam: '1FAIpQLSf83IOxUzndSP7r3W8dG4Gu5AgsDb8Uig2FQYwepfaLJDFk6Q',
                     certificate: '',
                     workDone:''
@@ -59,7 +59,7 @@
                 {
                     internship: 'Python with Flask',
                     DailyTask:'https://youtu.be/FAOmOCEdVCo',
-                    DailyReport: '1FAIpQLSeOjG9Jtci1T8vjZW08sAa5QTj6yjChXH7MCQGRzL-x1NqKdQ',
+                    DailyReport: '1FAIpQLSdHlU3Rd_XWK7VJmcJWP_p8VbsE8wCmdkRcI8sczqMto4sdIw',
                     DailyExam: '1FAIpQLSf83IOxUzndSP7r3W8dG4Gu5AgsDb8Uig2FQYwepfaLJDFk6Q',
                     certificate: '',
                     workDone:''
@@ -67,7 +67,7 @@
                 {
                     internship: 'Business Analyst & Advanced Excel',
                     DailyTask:'https://youtu.be/FAOmOCEdVCo',
-                    DailyReport: '1FAIpQLSeOjG9Jtci1T8vjZW08sAa5QTj6yjChXH7MCQGRzL-x1NqKdQ',
+                    DailyReport: '1FAIpQLSdHlU3Rd_XWK7VJmcJWP_p8VbsE8wCmdkRcI8sczqMto4sdIw',
                     DailyExam: '1FAIpQLScHkyXR-Dra0ge8w8yhdMkdqKrs_t6ZEH3qefX5-qnwetg2Ug',
                     certificate: '',
                     workDone:''
@@ -75,7 +75,7 @@
                 {
                     internship: 'Database Developer',
                     DailyTask:'https://youtu.be/FAOmOCEdVCo',
-                    DailyReport: '1FAIpQLSeOjG9Jtci1T8vjZW08sAa5QTj6yjChXH7MCQGRzL-x1NqKdQ',
+                    DailyReport: '1FAIpQLSdHlU3Rd_XWK7VJmcJWP_p8VbsE8wCmdkRcI8sczqMto4sdIw',
                     DailyExam: '1FAIpQLSf83IOxUzndSP7r3W8dG4Gu5AgsDb8Uig2FQYwepfaLJDFk6Q',
                     certificate: '',
                     workDone:''
